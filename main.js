@@ -17,6 +17,9 @@ function click(e) {
 window.addEventListener('click', click);
 function draw() {
     let w = canvas.width, h = canvas.height;
+    if (n == 0) {
+        birth = Date.now();
+    }
     ctx.fillStyle = 'white';
     ctx.clearRect(0, 0, w, h);
     ctx.fillStyle = 'red';
